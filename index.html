@@ -1,143 +1,123 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Deepak | SEO Expert & Digital Marketing Specialist</title>
-    <meta name="description" content="Deepak is an SEO Expert helping businesses rank on Google and grow online.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deepak | SEO Expert & Digital Marketing Specialist</title>
+<meta name="description" content="Deepak is an SEO Expert helping businesses rank on Google and grow online.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            scroll-behavior: smooth;
-        }
+<style>
+body{
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+    text-align:center;
+}
 
-        header {
-            background: linear-gradient(135deg, #000000, #434343);
-            color: white;
-            padding: 80px 20px;
-            text-align: center;
-            animation: fadeIn 2s ease-in-out;
-        }
+.container{
+    backdrop-filter: blur(15px);
+    background: rgba(255,255,255,0.1);
+    border-radius:20px;
+    padding:40px;
+    margin:50px auto;
+    width:90%;
+    max-width:900px;
+    box-shadow:0 8px 32px rgba(0,0,0,0.3);
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 45px;
-            letter-spacing: 2px;
-        }
+h1{
+    font-size:45px;
+    margin-bottom:10px;
+}
 
-        header p {
-            font-size: 20px;
-            margin-top: 15px;
-        }
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 30px;
+    background:#ff9800;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:0.3s;
+}
 
-        .btn {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 12px 30px;
-            background: #ff9800;
-            color: white;
-            text-decoration: none;
-            border-radius: 30px;
-            transition: 0.3s;
-        }
+.btn:hover{
+    transform:scale(1.1);
+    background:#e68900;
+}
 
-        .btn:hover {
-            background: #e68900;
-            transform: scale(1.1);
-        }
+.services{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
 
-        section {
-            padding: 60px 20px;
-            text-align: center;
-            animation: fadeUp 1.5s ease-in-out;
-        }
+.card{
+    background:rgba(255,255,255,0.15);
+    padding:20px;
+    border-radius:15px;
+    width:250px;
+    transition:0.3s;
+}
 
-        .services {
-            background: white;
-        }
+.card:hover{
+    transform:translateY(-10px);
+}
 
-        .service-box {
-            display: inline-block;
-            width: 250px;
-            margin: 20px;
-            padding: 25px;
-            background: #ffffff;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-            border-radius: 12px;
-            transition: 0.3s;
-        }
+footer{
+    margin:30px 0;
+    font-size:14px;
+}
 
-        .service-box:hover {
-            transform: translateY(-10px);
-        }
-
-        footer {
-            background: #111;
-            color: white;
-            padding: 25px;
-            text-align: center;
-        }
-
-        a {
-            color: #ff9800;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-    </style>
+@media(max-width:768px){
+    .services{
+        flex-direction:column;
+        align-items:center;
+    }
+}
+</style>
 </head>
 
 <body>
 
-<header>
+<div class="container">
     <h1>Deepak</h1>
     <p>SEO Expert & Digital Marketing Specialist</p>
     <a href="mailto:yourgmail@gmail.com" class="btn">Hire Me</a>
-</header>
+</div>
 
-<section>
+<div class="container">
     <h2>About Me</h2>
-    <p>I specialize in On-Page SEO, Keyword Research and Website Optimization. 
-       My goal is to help businesses rank higher on Google and increase organic traffic.</p>
-</section>
+    <p>I help businesses rank higher on Google using modern SEO and digital marketing strategies.</p>
+</div>
 
-<section class="services">
+<div class="container">
     <h2>My Services</h2>
-
-    <div class="service-box">
-        <h3>On-Page SEO</h3>
-        <p>Optimize website structure, meta tags and content.</p>
+    <div class="services">
+        <div class="card">
+            <h3>On-Page SEO</h3>
+            <p>Optimize content & structure for better ranking.</p>
+        </div>
+        <div class="card">
+            <h3>Keyword Research</h3>
+            <p>High traffic & low competition keywords.</p>
+        </div>
+        <div class="card">
+            <h3>Social Media Marketing</h3>
+            <p>Build strong brand presence online.</p>
+        </div>
     </div>
+</div>
 
-    <div class="service-box">
-        <h3>Keyword Research</h3>
-        <p>Find profitable keywords with high search intent.</p>
-    </div>
-
-    <div class="service-box">
-        <h3>Social Media Marketing</h3>
-        <p>Build brand awareness and online engagement.</p>
-    </div>
-
-</section>
-
-<section>
+<div class="container">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:sarohaa798@gmail.com">yourgmail@gmail.com</a></p>
-</section>
+    <p>Email: yourgmail@gmail.com</p>
+</div>
 
 <footer>
-    <p>© 2026 Deepak | All Rights Reserved</p>
+© 2026 Deepak | All Rights Reserved
 </footer>
 
 </body>
-</html>   
+</html>
