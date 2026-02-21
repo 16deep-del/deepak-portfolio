@@ -9,40 +9,49 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #f5f5f5;
+            background: #f4f4f4;
+            scroll-behavior: smooth;
         }
 
         header {
-            background: linear-gradient(135deg, #000000, #333333);
+            background: linear-gradient(135deg, #000000, #434343);
             color: white;
-            padding: 60px 20px;
+            padding: 80px 20px;
             text-align: center;
+            animation: fadeIn 2s ease-in-out;
         }
 
         header h1 {
             margin: 0;
-            font-size: 40px;
+            font-size: 45px;
+            letter-spacing: 2px;
         }
 
         header p {
-            font-size: 18px;
-            margin-top: 10px;
+            font-size: 20px;
+            margin-top: 15px;
         }
 
         .btn {
             display: inline-block;
-            margin-top: 20px;
-            padding: 12px 25px;
+            margin-top: 25px;
+            padding: 12px 30px;
             background: #ff9800;
             color: white;
             text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #e68900;
+            transform: scale(1.1);
         }
 
         section {
-            padding: 50px 20px;
+            padding: 60px 20px;
             text-align: center;
+            animation: fadeUp 1.5s ease-in-out;
         }
 
         .services {
@@ -52,22 +61,37 @@
         .service-box {
             display: inline-block;
             width: 250px;
-            margin: 15px;
-            padding: 20px;
+            margin: 20px;
+            padding: 25px;
             background: #ffffff;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .service-box:hover {
+            transform: translateY(-10px);
         }
 
         footer {
             background: #111;
             color: white;
-            padding: 20px;
+            padding: 25px;
             text-align: center;
         }
 
         a {
             color: #ff9800;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
@@ -82,7 +106,8 @@
 
 <section>
     <h2>About Me</h2>
-    <p>I help businesses grow online through SEO, keyword research and website optimization strategies.</p>
+    <p>I specialize in On-Page SEO, Keyword Research and Website Optimization. 
+       My goal is to help businesses rank higher on Google and increase organic traffic.</p>
 </section>
 
 <section class="services">
@@ -90,5 +115,29 @@
 
     <div class="service-box">
         <h3>On-Page SEO</h3>
-        <p>Optimize websites to rank higher on Google search results.</p>
+        <p>Optimize website structure, meta tags and content.</p>
     </div>
+
+    <div class="service-box">
+        <h3>Keyword Research</h3>
+        <p>Find profitable keywords with high search intent.</p>
+    </div>
+
+    <div class="service-box">
+        <h3>Social Media Marketing</h3>
+        <p>Build brand awareness and online engagement.</p>
+    </div>
+
+</section>
+
+<section>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:yourgmail@gmail.com">yourgmail@gmail.com</a></p>
+</section>
+
+<footer>
+    <p>© 2026 Deepak | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
